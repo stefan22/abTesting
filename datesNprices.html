@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Latest Offers | Dates & Prices</title>
+    <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.css" />
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/combined.css" />
+    <link rel="stylesheet" href="css/discovery-centre.css" />
+    <link rel="stylesheet" href="css/mystyles.css" />
+    </title>
+</head>
+
+<body class="" style="background-image: url(images/46-107042_butlins-bg.jpg);">
+    <div role="main" class="container container_14">
+        <header id="mHeader" class="grid_12">
+            <div class="grid_8 alpha">
+                <h1 class="white-header">Dates & Prices</h1>
+
+            </div>
+        </header>
+        <div class="clear">
+        </div>
+
+        <div id="main-content">
+
+            <!--  button   -->
+            <section id="varbutton">
+
+                <button type="button" id="buttonAdd" class="button buttonAdd" onclick="buttonAdd">Add Variation</button>
+
+                <button type="button" id="buttonRem" class="button buttonRem" onclick="buttonRem">Original</button>&nbsp;&nbsp;
+
+                <!--  message   -->
+            </section>
+            <!--  end of button   -->
+
+
+            <div class="grid_14 grid_planner price-grid">
+                <div class="content-panel">
+                    <h2>Please select from the next available dates</h2>
+                    <div class="grid_14 alpha omega grid_planner_container">
+                        <div class="filter-top">
+                            <div class="toggle">
+                                <span id="hide-filters">Hide Filters</span>
+                                <span id="show-filters">Show Filters</span>
+                            </div>
+
+                            <ul id="guest-planner-filters">
+                                <li id="cpMain_ctlPriceMatrixTcm46175856_when" class="when field-elems-hor">
+                                    <p class="filter-elem-1">Month</p>
+                                    <select name="ctl00$cpMain$ctlPriceMatrixTcm46175856$ddlMonth" id="cpMain_ctlPriceMatrixTcm46175856_ddlMonth" class="select">
+                                        <option selected="selected" value="02/2017">Feb 2017</option>
+                                        <option value="03/2017">Mar 2017</option>
+                                        <option value="04/2017">Apr 2017</option>
+                                        <option value="05/2017">May 2017</option>
+                                        <option value="06/2017">Jun 2017</option>
+                                        <option value="07/2017">Jul 2017</option>
+                                        <option value="08/2017">Aug 2017</option>
+                                        <option value="09/2017">Sep 2017</option>
+                                        <option value="10/2017">Oct 2017</option>
+                                        <option value="11/2017">Nov 2017</option>
+                                        <option value="12/2017">Dec 2017</option>
+                                        <option value="01/2018">Jan 2018</option>
+                                        <option value="02/2018">Feb 2018</option>
+                                        <option value="03/2018">Mar 2018</option>
+                                        <option value="04/2018">Apr 2018</option>
+                                        <option value="05/2018">May 2018</option>
+                                        <option value="06/2018">Jun 2018</option>
+                                        <option value="07/2018">Jul 2018</option>
+                                        <option value="08/2018">Aug 2018</option>
+                                        <option value="09/2018">Sep 2018</option>
+                                        <option value="10/2018">Oct 2018</option>
+
+                                    </select>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_tbDate">
+                                        Choose a date
+                                        <input name="ctl00$cpMain$ctlPriceMatrixTcm46175856$tbDate" type="text" id="cpMain_ctlPriceMatrixTcm46175856_tbDate" class="arrival-date" placeholder="DD/MM/YYYY" />
+                                        <span class="calendar-image"></span>
+                                    </label>
+                                </li>
+                                <li class="which-resort field-elems-hor">
+                                    <p class="filter-elem-2">Which resort?</p>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_radBognor">
+                                        <input id="cpMain_ctlPriceMatrixTcm46175856_radBognor" type="radio" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$resort" value="BG" /> Bognor Regis
+                                    </label>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_radMinehead">
+                                        <input id="cpMain_ctlPriceMatrixTcm46175856_radMinehead" type="radio" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$resort" value="MH" /> Minehead
+                                    </label>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_radSkegness">
+                                        <input id="cpMain_ctlPriceMatrixTcm46175856_radSkegness" type="radio" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$resort" value="SK" /> Skegness
+                                    </label>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_radDontMind">
+                                        <input id="cpMain_ctlPriceMatrixTcm46175856_radDontMind" type="radio" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$resort" value="" checked="checked" /> I don't mind
+                                    </label>
+                                </li>
+                                <li class="how-many-nights field-elems-hor">
+                                    <p class="filter-elem-3">How many nights?</p>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_chkNightsTwo">
+                                        <input id="cpMain_ctlPriceMatrixTcm46175856_chkNightsTwo" type="checkbox" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$chkNightsTwo" Value="2" /> 2 nights
+                                    </label>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_chkNightsThree">
+                                        <input id="cpMain_ctlPriceMatrixTcm46175856_chkNightsThree" type="checkbox" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$chkNightsThree" Value="3" /> 3 nights
+                                    </label>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_chkNightsFour">
+                                        <input id="cpMain_ctlPriceMatrixTcm46175856_chkNightsFour" type="checkbox" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$chkNightsFour" Value="4" /> 4 nights
+                                    </label>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_chkNightsSeven">
+                                        <input id="cpMain_ctlPriceMatrixTcm46175856_chkNightsSeven" type="checkbox" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$chkNightsSeven" Value="7" /> 7 nights
+                                    </label>
+                                </li>
+                                <li class="apartments-rooms field-elems-hor">
+                                    <p class="filter-elem-4">I would like to see prices for</p>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_radApartments">
+                                        <input id="cpMain_ctlPriceMatrixTcm46175856_radApartments" type="radio" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$roomtype" value="apartment" checked="checked" /> Apartments
+                                    </label>
+                                    <label for="cpMain_ctlPriceMatrixTcm46175856_radRooms">
+                                        <input id="cpMain_ctlPriceMatrixTcm46175856_radRooms" type="radio" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$roomtype" value="room" /> Rooms
+                                    </label>
+                                </li>
+                                <li class="field-elems-hor js-hide">
+                                    <span class="button button-yellow">
+                            <input type="submit" name="ctl00$cpMain$ctlPriceMatrixTcm46175856$btnFilter" value="Filter" id="cpMain_ctlPriceMatrixTcm46175856_btnFilter" />
+                        </span>
+                                </li>
+                            </ul>
+
+                            <div id="selected-criteria" class="selected-criteria">
+                                <p><span>Showing breaks for:</span> All resorts in February 2017, Apartment Prices</p>
+                            </div>
+                        </div>
+
+                        <div class="grid_14 alpha omega latest-offers-grid" id="matrix">
+                            <input type="hidden" id="actIdValue" value="" />
+                            <input type="hidden" id="offersetIdValue" value="" />
+                            <input type="hidden" id="resortValue" value="" />
+                            <input type="hidden" id="startValue" value="02/2017" />
+                            <input type="hidden" id="durationsValue" value="" />
+                            <input type="hidden" id="roomTypeValue" value="apartment" />
+                            <input type="hidden" id="individualDate" value="false" />
+                            <input type="hidden" id="validDurations" value="3 4 7" />
+
+                            <div class="loading-overlay">
+                                <div class="loader">
+                                    <div>
+                                        <div id="clouds"></div>
+                                        <img src="" id="windmill" />
+                                    </div>
+                                    <div>
+                                        <p>We're just loading your page for you, won't be long</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-header">
+                                <div class="grid_2 alpha omega">
+                                </div>
+
+                                <div class="grid_3 alpha omega selected_first">
+                                    <h4>Bognor Regis</h4>
+                                </div>
+                                <div class="grid_3 alpha omega selected_middle">
+                                    <h4 class="two-lines">Hotels at <br /> Bognor Regis</h4>
+                                </div>
+                                <div class="grid_3 alpha omega selected_middle">
+                                    <h4>Minehead</h4>
+                                </div>
+                                <div class="grid_3 alpha omega selected_last">
+                                    <h4>Skegness</h4>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="grid-row">
+
+                                <div class="grid_2 alpha omega">
+
+                                    <div class="calendar">
+                                        <div>
+                                            <p><strong>3 Nights</strong>
+                                            </p>
+                                            <span>(Fri-Mon)</span>
+                                        </div>
+                                        <div class="last">
+                                            <p>Fri</p>
+                                            <h3>10 Feb</h3>
+                                            <p class="last">2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid_3 alpha omega selected cheapest">
+                                    <div class="cheapest-body">
+
+                                        <div class="cheapest-heading">
+                                            <p>BEST VALUE</p>
+                                        </div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Gold apartment
+                                            <br />from <span class="latest-offer-price">&pound;89</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" class="grey-out-overlay" />
+                                    </div>
+                                </div>
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Shoreline Hotel
+                                            <br />from <span class="latest-offer-price">&pound;81</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href="/"><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+                                <div class="grid_3 alpha omega selected cheapest">
+                                    <div class="cheapest-body">
+
+                                        <div class="cheapest-heading">
+                                            <p>BEST VALUE</p>
+                                        </div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;53</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+                                <div class="grid_3 alpha omega selected cheapest">
+                                    <div class="cheapest-body">
+
+                                        <div class="cheapest-heading">
+                                            <p>BEST VALUE</p>
+                                        </div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;52</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href="/"><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                            <div class="grid-row">
+
+                                <div class="grid_2 alpha omega">
+
+                                    <div class="calendar">
+                                        <div>
+                                            <p><strong>7 Nights</strong>
+                                            </p>
+                                            <span>(Fri-Fri)</span>
+                                        </div>
+                                        <div class="last">
+                                            <p>Fri</p>
+                                            <h3>10 Feb</h3>
+                                            <p class="last">2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Gold apartment
+                                            <br />from <span class="latest-offer-price">&pound;171</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Shoreline Hotel
+                                            <br />from <span class="latest-offer-price">&pound;149</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;116</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Gold apartment
+                                            <br />from <span class="latest-offer-price">&pound;134</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                            <div class="grid-row">
+
+                                <div class="grid_2 alpha omega">
+
+                                    <div class="calendar">
+                                        <div>
+                                            <p><strong>4 Nights</strong>
+                                            </p>
+                                            <span>(Mon-Fri)</span>
+                                        </div>
+                                        <div class="last">
+                                            <p>Mon</p>
+                                            <h3>13 Feb</h3>
+                                            <p class="last">2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;96</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Ocean Hotel
+                                            <br />from <span class="latest-offer-price">&pound;97</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;77</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Gold apartment
+                                            <br />from <span class="latest-offer-price">&pound;91</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                            <div class="grid-row">
+
+                                <div class="grid_2 alpha omega">
+
+                                    <div class="calendar">
+                                        <div>
+                                            <p><strong>7 Nights</strong>
+                                            </p>
+                                            <span>(Mon-Mon)</span>
+                                        </div>
+                                        <div class="last">
+                                            <p>Mon</p>
+                                            <h3>13 Feb</h3>
+                                            <p class="last">2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Gold apartment
+                                            <br />from <span class="latest-offer-price">&pound;200</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Ocean Hotel
+                                            <br />from <span class="latest-offer-price">&pound;165</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;130</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Gold apartment
+                                            <br />from <span class="latest-offer-price">&pound;168</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                            <div class="grid-row">
+
+                                <div class="grid_2 alpha omega">
+
+                                    <div class="calendar">
+                                        <div>
+                                            <p><strong>3 Nights</strong>
+                                            </p>
+                                            <span>(Fri-Mon)</span>
+                                        </div>
+                                        <div class="last">
+                                            <p>Fri</p>
+                                            <h3>17 Feb</h3>
+                                            <p class="last">2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Gold apartment
+                                            <br />from <span class="latest-offer-price">&pound;97</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="grid_3 alpha omega selected cheapest">
+                                    <div class="cheapest-body">
+
+                                        <div class="cheapest-heading">
+                                            <p>BEST VALUE</p>
+                                        </div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Ocean Hotel
+                                            <br />from <span class="latest-offer-price">&pound;78</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;64</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;73</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                            <div class="grid-row">
+
+                                <div class="grid_2 alpha omega">
+
+                                    <div class="calendar">
+                                        <div>
+                                            <p><strong>7 Nights</strong>
+                                            </p>
+                                            <span>(Fri-Fri)</span>
+                                        </div>
+                                        <div class="last">
+                                            <p>Fri</p>
+                                            <h3>17 Feb</h3>
+                                            <p class="last">2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="grid_3 alpha omega sold-out selected">
+                                    <div>
+                                        <h3>Sold Out</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="grid_3 alpha omega sold-out selected">
+                                    <div>
+                                        <h3>Sold Out</h3>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;116</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Gold apartment
+                                            <br />from <span class="latest-offer-price">&pound;153</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href="/"><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                            <div class="grid-row">
+
+                                <div class="grid_2 alpha omega">
+
+                                    <div class="calendar">
+                                        <div>
+                                            <p><strong>4 Nights</strong>
+                                            </p>
+                                            <span>(Mon-Fri)</span>
+                                        </div>
+                                        <div class="last">
+                                            <p>Mon</p>
+                                            <h3>20 Feb</h3>
+                                            <p class="last">2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="grid_3 alpha omega sold-out selected">
+                                    <div>
+                                        <h3>Sold Out</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="grid_3 alpha omega sold-out selected">
+                                    <div>
+                                        <h3>Sold Out</h3>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;72</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href="/"><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="grid_3 alpha omega selected">
+                                    <div>
+                                        <a id="whatsOnLink" href="">February Half Term</a>
+                                        <p class="latest-type">Silver apartment
+                                            <br />from <span class="latest-offer-price">&pound;73</span> <span>pp</span> <a class="lightbox lightbox-accomodation-more-info" href=""><span>More Information</span></a>
+                                        </p>
+                                        <a class="button bookingEngine button-red" href="">
+                                            <span>Get A Quote</span>
+                                        </a>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                            <div class="grid-row">
+
+                                <div class="grid_2 alpha omega">
+
+                                    <div class="calendar">
+                                        <div>
+                                            <p><strong>3 Nights</strong>
+                                            </p>
+                                            <span>(Fri-Mon)</span>
+                                        </div>
+                                        <div class="last">
+                                            <p>Fri</p>
+                                            <h3>24 Feb</h3>
+                                            <p class="last">2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="grid_3 alpha omega bigWeekends selected">
+                                    <div>
+                                        <a href="
+                ">Live Music Weekend</a>
+                                        <p>Exclusively for grown-ups</p>
+                                        <a class="button button-red" href="">
+                                            <span>See more</span>
+                                        </a>
+                                        <p></p>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+                                <div class="grid_3 alpha omega bigWeekends selected">
+                                    <div>
+                                        <a href="
+                ">Live Music Weekend</a>
+                                        <p>Exclusively for grown-ups</p>
+                                        <a class="button button-red" href="">
+                                            <span>See more</span>
+                                        </a>
+                                        <p></p>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+
+                                <div class="grid_3 alpha omega bigWeekends selected">
+                                    <div>
+                                        <a href="
+                ">Live Music Weekend</a>
+                                        <p>Exclusively for grown-ups</p>
+                                        <a class="button button-red" href="">
+                                            <span>See more</span>
+                                        </a>
+                                        <p></p>
+                                        <img src="" />
+                                    </div>
+                                </div>
+
+
+                                <div class="grid_3 alpha omega bigWeekends selected">
+                                    <div>
+                                        <a href="
+                ">Live Music Weekend</a>
+                                        <p>Exclusively for grown-ups</p>
+                                        <a class="button button-red" href="">
+                                            <span>See more</span>
+                                        </a>
+                                        <p></p>
+                                        <img src="" />
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+
+
+                            <div id="">
+
+
+                                <select name="" id="" class="select">
+                                    <option selected="selected" value="02/2017">Feb 2017</option>
+                                    <option value="03/2017">Mar 2017</option>
+                                    <option value="04/2017">Apr 2017</option>
+                                    <option value="05/2017">May 2017</option>
+                                    <option value="06/2017">Jun 2017</option>
+                                    <option value="07/2017">Jul 2017</option>
+                                    <option value="08/2017">Aug 2017</option>
+                                    <option value="09/2017">Sep 2017</option>
+                                    <option value="10/2017">Oct 2017</option>
+                                    <option value="11/2017">Nov 2017</option>
+                                    <option value="12/2017">Dec 2017</option>
+                                    <option value="01/2018">Jan 2018</option>
+                                    <option value="02/2018">Feb 2018</option>
+                                    <option value="03/2018">Mar 2018</option>
+                                    <option value="04/2018">Apr 2018</option>
+                                    <option value="05/2018">May 2018</option>
+                                    <option value="06/2018">Jun 2018</option>
+                                    <option value="07/2018">Jul 2018</option>
+                                    <option value="08/2018">Aug 2018</option>
+                                    <option value="09/2018">Sep 2018</option>
+                                    <option value="10/2018">Oct 2018</option>
+
+                                </select>
+                                <span class="button button-yellow js-hide">
+                        <input type="submit" name="
+                        " value="Change" id="
+                        " />
+                    </span>
+                                <a id="
+                    " class="scroll_right" href="/
+                    ">scroll right</a>
+
+
+
+                                <div class="clear"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="grid-footer grid_10 alpha omega">
+                            <h4>Please note:</h4>
+                            <ul>
+                                <li>Prices are per person per break and show how much you would typically pay based on two adults and two children sharing a room (on a room only basis) or a self-catering apartment. </li>
+                                <li>Prices shown include any additional discounts. </li>
+                                <li>All offers are subject to promotional availability and can be withdrawn at any time. </li>
+                                <li>The prices shown include VAT at 20%.</li>
+                                <li>Skegness Spa breaks are per person per break staying in our fabulous Gold accommodation with access to both the full Resort and Spa facilities, Dinner & Breakfast is included. Please note spa breaks are not available with a self-catering option.</li>
+                            </ul>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="end-white bottom-shadow"></div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="clear"></div>
+    </div>
+
+    <script src="js/redscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+
+/*   new classes
+----------------------------------------------
+*/
+.sheader, .svalue, .orig, .variation, .sout  {
+
+
+}	
+
+
+/*
+---------------------------------
+ existing css
+_________________________________
+=> a few fixes to existing layout so that
+=> original and variations remain consistent.
+*/
+
+
+/*
+pushes content 5px so that
+aligns with header
+*/
+div.grid-row {
+	margin:0 0 0 5px;
+}
+
+
+/* fixes red button text not centered 
+   and aligns all red buttons across y-axis
+*/
+
+.button > span, .button-red > span {
+	vertical-align: middle;
+    padding: 2px 26px !important;
+    height: 24px !important;
+    line-height: 24px !important;
+    font-size: 14px !important;
+}
+
+div > a.button.bookingEngine.button-red {
+	margin-top: 28px !important;
+	
+}
+div.cheapest-body > a.button.bookingEngine.button-red {
+	margin-top: 10px !important;
+	
+}
+
+div.bigWeekends a.button.button-red {
+	margin-top: 48px !important;
+	padding: 2px 26px !important;
+	
+}
+
+/* fixes a small white line on existing layout
+   created by line height under Hotels
+*/
+.grid_planner > div.content-panel .latest-offers-grid > .grid-header>div>h4 { 
+	font-family: "FrontageRegularWebfont";
+    color: #333;
+    font-size: 1.35em;
+    line-height: 1.1;
+    margin: 0;
+    padding: 1.25em 0 0;
+}
+
+
+div.grid_3.alpha.omega.selected {
+    color: #333;
+    padding: 5px;
+
+}
+
+div.grid_3.alpha.omega.selected > div > p.latest-type > span.latest-offer-price {
+    line-height: 14px !important;
+
+}
+
+
+
+/*
+---------------------------------
+ variation boxes
+_________________________________
+*/
+
+
+
+div.grid_3.alpha.omega.selected.orig {
+    padding: 5px !important;
+   
+}
+
+.orig div a#whatsOnLink {
+	font-size: 12px !important;
+    line-height: 13px !important;
+    height: 13px !important;
+}
+
+
+.variation div a#whatsOnLink {
+	font-size: 16px !important;
+    line-height: 16px !important;
+    text-align: center;
+    text-decoration: none;
+    color: #333 !important;
+    font-weight: 600;
+    cursor: default;
+
+
+}
+
+.variation div a#botlink.botlink {
+	text-decoration: underline;
+}
+
+.orig div p.latest-type {
+	margin: 10px 0 0 !important;
+    font-size: 11px !important;
+    line-height: 14px !important;
+    color: #333;
+}
+
+
+
+.variation div p.latest-type {
+	margin:6px 0 0 0 !important;
+	font-weight: 600 !important;
+    line-height: 14px !important;
+    font-size: 11px !important;
+}
+
+.variation div p span.latest-offer-price {
+	font-family: "FrontageBoldWebfont";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.orig div a.button.bookingEngine.button-red {
+	margin-top: 27px !important;
+    padding: .18em 1em;
+}
+
+.variation div a.button.bookingEngine.button-red {
+	font-size: 14px !important;
+    height: 26px !important;
+    line-height: 24px !important;
+    margin-top: 7px !important;
+    padding: 3.2px 13.75px !important;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+
+
+}
+
+
+
+
+
+
+
+
+
+/*
+---------------------------------
+buttons section
+_________________________________
+*/
+
+
+
+#main-content {
+	position: relative;
+}
+
+
+
+section#varbutton {
+	position: absolute;
+    top: -30px;
+    left: 2%;
+   
+
+}
+
+section#varbutton button.button {
+	
+    
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 22px;
+    border: 1px solid #19324c;
+    color: #cacaca;
+    border-radius: 4px;
+    
+}
+
+.buttonAdd {
+	background-color: #b80c18;
+	color: #e0dede;
+	
+	cursor: pointer; 
+}
+
+
+.buttonRem {
+	background-color: #18426e;
+	
+	cursor: pointer; 
+}
+
+.buttonRem:hover {
+	background-color: #ca9e32;
+    color: #f1f1f1;
+    border: 1px solid #65651f;
+}
+
+
+.buttonAdd:hover {
+	background-color: #ca9e32;
+    color: #f1f1f1;
+    border: 1px solid #65651f;
+}
+
+
+
+
+
+
+
+
