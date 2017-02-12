@@ -1,4 +1,4 @@
-## A/B Testing task &nbsp; :zap:
+## A/B Testing task &nbsp; :zap:   //js/redscript.js
 
 > Client would like to A/B test on their product offers price grid by
 > replacing per person pricing, with unit/family pricing (£ p.p. price x 4) to 
