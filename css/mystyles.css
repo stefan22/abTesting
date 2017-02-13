@@ -89,6 +89,7 @@ _________________________________
 
 div.grid_3.alpha.omega.selected.orig {
     padding: 5px !important;
+    transition: all 3s;
    
 }
 
@@ -107,6 +108,7 @@ div.grid_3.alpha.omega.selected.orig {
     color: #333 !important;
     font-weight: 600;
     cursor: default;
+    transition: all .1s;
 
 
 }
@@ -129,6 +131,7 @@ div.grid_3.alpha.omega.selected.orig {
 	font-weight: 600 !important;
     line-height: 14px !important;
     font-size: 11px !important;
+    transition:all .15s;
 }
 
 .variation div p span.latest-offer-price {
@@ -141,6 +144,7 @@ div.grid_3.alpha.omega.selected.orig {
 .orig div a.button.bookingEngine.button-red {
 	margin-top: 27px !important;
     padding: .18em 1em;
+    transition: all .12s;
 }
 
 .variation div a.button.bookingEngine.button-red {
@@ -216,6 +220,7 @@ section#varbutton button.button {
 	background-color: #ca9e32;
     color: #f1f1f1;
     border: 1px solid #65651f;
+    transition:background .15s;
 }
 
 
@@ -223,6 +228,7 @@ section#varbutton button.button {
 	background-color: #ca9e32;
     color: #f1f1f1;
     border: 1px solid #65651f;
+    transition:background .15s;
 }
 
 
