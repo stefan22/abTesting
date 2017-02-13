@@ -18,15 +18,98 @@ document.addEventListener('DOMContentLoaded', function() {
     var sold = document.querySelectorAll('.grid_3.alpha.omega.sold-out');
     //selected handle
     var selected = document.querySelectorAll('.grid_3.alpha.omega.selected');
+    //all filters
+    var filters = document.getElementById('guest-planner-filters');
+    //bognor heading
+    var head1 = document.querySelector('.grid_3.alpha.omega.selected_first');
+    //regis heading
+    //minehead heading
+    //skegness heading
+    //resort-bognor
+    var reBognor = document.
+    getElementById('cpMain_ctlPriceMatrixTcm46175856_radBognor');
+    // resort-minehead
+    var reMine = document.
+    getElementById('cpMain_ctlPriceMatrixTcm46175856_radMinehead');
+    // resort skegness
+    var reSkeg = document.
+    getElementById('cpMain_ctlPriceMatrixTcm46175856_radSkegness');
+
+    
 
 
-/* ************---------------**********************--------------->
-//  calling click event on button 'Add Variation' and 'Original'
-//	with 2 functions below
-//  Goes through entire section and adds an additonal class to each
-//  elem in obj array to take care of style variations
-// ------------****************---------------------**************->
+    /*
+--------------->
+Filters:resort
+--------------->
 */
+
+    
+    function whichResort(e) {
+        
+        console.log(e.target);
+        
+        //go through 36 slots n assign classes every four starting at pos 0
+        if (eltar.length >= 0) {
+          for (var i = 0; i < eltar.length; i=i+4) {
+                //bognor regist first column
+                if ( i % 4 == 0 &&  i != 0 && i != 4) {
+                    //also skip these ones:sold out and music event
+                    if( i !=24 && i!=28 && i!=32 && reBognor.checked ) {
+                        eltar[i].classList.add('bognor');
+                        head1.style.backgroundColor = "#ffd565";
+                        console.log('bognor checked');
+
+                    }//also skip
+
+                    else if ( i !=24 && i!=28 && i!=32 && reBognor.checked == false ) {
+                        eltar[i].classList.remove('bognor');
+                        head1.style.backgroundColor = "#c4dfea";
+                        console.log('bognor unchecked');
+
+                    }//unchecked
+
+                }//if bognor
+
+                //regis
+                else if (i == 5 || i % 4 == 1) {
+                    eltar[i].classList.add('regis');
+                    console.log('regis checked');
+                }//regis
+
+
+                //minehead
+                else if (i == 5 || i % 4 == 2) {
+                    eltar[i].classList.add('minehead');
+                    console.log('minehead checked');
+                }//minehead
+
+                //skegness
+                else if (i == 6 || i % 4 == 3) {
+                    eltar[i].classList.add('skegness');
+                    console.log('skegness checked');
+                }//skegness
+
+
+               
+                
+            }
+            //forloop
+            console.log(eltar);
+            return eltar;
+
+        }//if greater than zero
+        
+        
+    }//which resort funct
+
+
+filters.addEventListener('click', whichResort,false);
+
+
+
+
+
     /*
 --------------->
 Add Variation button
