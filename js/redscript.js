@@ -20,8 +20,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var selected = document.querySelectorAll('.grid_3.alpha.omega.selected');
     //all filters
     var filters = document.getElementById('guest-planner-filters');
-    //bognor heading
+    //head1=>styling resort 1 heading
     var head1 = document.querySelector('.grid_3.alpha.omega.selected_first');
+    //head2=>styling resort 2 heading
+    var head2 = document.querySelectorAll('.grid_3.alpha.omega.selected_middle')[0];
+    //head3=>styling resort 3 heading
+    var head3 = document.querySelectorAll('.grid_3.alpha.omega.selected_middle')[1];
+    //head4=>styling resort 4 heading
+    var head4 = document.querySelector('.grid_3.alpha.omega.selected_last');
+
+    //all radio boxes => all resorts options
+    var radios = document.
+    getElementsByName('ctl00$cpMain$ctlPriceMatrixTcm46175856$resort');
+   
     //regis heading
     //minehead heading
     //skegness heading
@@ -46,30 +57,57 @@ Filters:resort
 
     
     function whichResort(e) {
+        console.clear();
+        //loop through options
+        for (var i=0; i < radios.length; i++) {
+
+            if (radios[i].checked && radios[i].value == "BG" ) {
+                console.log('radio clicked: ' + radios[i].value);
+                head1.style.backgroundColor = "#ffd25d";
+                head2.style.backgroundColor = "";
+                head3.style.backgroundColor = "";
+                head4.style.backgroundColor = "";
+            
+            }//if BG
+
+            else if ( radios[i].checked && radios[i].value == "MH") {
+                console.log('radio clicked: ' + radios[i].value);
+                head1.style.backgroundColor = "";
+                head2.style.backgroundColor = "#ffd25d";
+                head3.style.backgroundColor = "";
+                head4.style.backgroundColor = "";
+            
+            }// if MH
+
+            else if ( radios[i].checked && radios[i].value == "SK") {
+                console.log('radio clicked: ' + radios[i].value);
+                head1.style.backgroundColor = "";
+                head2.style.backgroundColor = "";
+                head3.style.backgroundColor = "#ffd25d";
+                head4.style.backgroundColor = "";
+            
+            }// if SK
+
+            else if ( radios[i].checked && radios[i].value == "") {
+                console.log('radio clicked: ' + radios[i].value);
+                head1.style.backgroundColor = "#ffd25d";
+                head2.style.backgroundColor = "#ffd25d";
+                head3.style.backgroundColor = "#ffd25d";
+                head4.style.backgroundColor = "#ffd25d";
+            
+            }// if dontMind => all options avail
         
-        console.log(e.target);
+        }//for   
+
+
+
+
         
-        //go through 36 slots n assign classes every four starting at pos 0
-        if (eltar.length >= 0) {
-          for (var i = 0; i < eltar.length; i=i+4) {
-                //bognor regist first column
-                if ( i % 4 == 0 &&  i != 0 && i != 4) {
-                    //also skip these ones:sold out and music event
-                    if( i !=24 && i!=28 && i!=32 && reBognor.checked ) {
-                        eltar[i].classList.add('bognor');
-                        head1.style.backgroundColor = "#ffd565";
-                        console.log('bognor checked');
+                
 
-                    }//also skip
 
-                    else if ( i !=24 && i!=28 && i!=32 && reBognor.checked == false ) {
-                        eltar[i].classList.remove('bognor');
-                        head1.style.backgroundColor = "#c4dfea";
-                        console.log('bognor unchecked');
-
-                    }//unchecked
-
-                }//if bognor
+            
+           /*
 
                 //regis
                 else if (i == 5 || i % 4 == 1) {
@@ -90,16 +128,10 @@ Filters:resort
                     console.log('skegness checked');
                 }//skegness
 
+            */
 
-               
                 
-            }
-            //forloop
-            console.log(eltar);
-            return eltar;
-
-        }//if greater than zero
-        
+         
         
     }//which resort funct
 
@@ -138,19 +170,26 @@ Add Variation button
                         if (eltar[i].classList.length > 3 && eltar[i].hasAttribute('class')) {
                         //if u press original button first
                         eltar[i].classList.remove('orig');
-                        //press variation
-                        eltar[i].classList.add('variation');
+                        eltar[i].classList.remove('bognor');    //if it exists
+                        //check filters
+                        if (eltar[i].hasAttribute('class','bognor')) {
+                                //press variation
+                                eltar[i].classList.add('variation');
+                                //add variation innerHTML
+                                varAddContent();       //starts
+                        }
+
+
                         
-                        //add variation innerHTML
-                        varAddContent();       //starts
                        
-                    } else if (eltar[i].classList.length > 4 ) {
-                        eltar[i].classList.remove('variation');
-                        eltar[i].classList.add('orig');
-                        varRemContent();
-                      
-                    }
-                    // else orig
+                        } else if (eltar[i].classList.length > 4 ) {
+                            eltar[i].classList.remove('variation');
+                            eltar[i].classList.add('orig');
+                            eltar[i].classList.remove('bognor');
+                            varRemContent();
+                          
+                        }
+                        // else orig
                 }
                 //everybody else
                 
