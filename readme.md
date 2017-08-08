@@ -12,20 +12,20 @@
 <br />
 
 <kbd>original-top-section</kbd> :cactus:
-![one](images/originaltop.png?raw=true "mobile" target="_blank")
+![one](images/originaltop.png)
 
 
 <kbd>original-bottom-section</kbd> :cactus:
-![one](images/originalbottom.png?raw=true "mobile" target="_blank")
+![one](images/originalbottom.png)
 
 <hr/>
 <br />
 
 <kbd>variation-top-section</kbd> :chestnut:
-![one](images/variationtop.png?raw=true "mobile" target="_blank")
+![one](images/variationtop.png)
 
 <kbd>variation-bottom-section</kbd> :chestnut:
-![one](images/variationbottom.png?raw=true "mobile" target="_blank")
+![one](images/variationbottom.png)
 
 
 
